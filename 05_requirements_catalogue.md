@@ -28,7 +28,7 @@
 | FR-009 | Assigned pilot can upload evidence references and submit a versioned package to `EVIDENCE_REVIEW`. | File type/version and submission check. | Must | PROPOSED |
 | FR-010 | QA reviewer can approve evidence or request rework with reasons; the pilot cannot approve their own package. | Approval separation and loop. | Must | PROPOSED |
 | FR-011 | Coordinator can release only the latest QA-approved package to the owning customer, producing a delivery reference and timestamp. | Block unapproved delivery. | Must | PROPOSED |
-| FR-012 | Requester can acknowledge receipt of a `DELIVERED` package and close it; receipt does not imply acceptance of commercial quality claims. | Closure and access test. | Should | TO VERIFY |
+| FR-012 | Requester can acknowledge receipt of a `DELIVERED` package and close it; receipt does not imply acceptance of commercial quality claims. | Closure and access test. | Must | TO VERIFY |
 | FR-013 | Authorized users can filter/search requests by permitted organization, request ID, status, owner or due window. | Search and record-scope checks. | Should | PROPOSED |
 | FR-014 | Every read/download and mutation uses server-side role + organization authorization rather than UI-only hiding. | Cross-tenant negative tests. | Must | TO VERIFY |
 | FR-015 | Material status, assignment, scope, approval and release changes are logged with actor, timestamp, before/after state and reason where relevant. | Audit record inspection. | Must | PROPOSED |
