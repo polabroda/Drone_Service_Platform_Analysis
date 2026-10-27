@@ -1,0 +1,16 @@
+request_id,client_org,requester_id,site_reference,service_type,status,assigned_pilot,planning_attestation,qa_approved,delivery_reference
+REQ-1001,Oriole Commerce,req-ora,SITE-101,roof-condition,DRAFT,,false,false,
+REQ-1002,Oriole Commerce,req-ora,SITE-102,roof-condition,SUBMITTED,,false,false,
+REQ-1003,Cedarstone Assets,req-csa,SITE-201,facade-survey,NEEDS_INFO,,false,false,
+REQ-1004,Cedarstone Assets,req-csa,SITE-202,facade-survey,TRIAGED,,false,false,
+REQ-1005,Windwell Property,req-wwp,SITE-301,solar-panel,FEASIBILITY_REVIEW,,false,false,
+REQ-1006,Windwell Property,req-wwp,SITE-302,solar-panel,READY_TO_SCHEDULE,,true,false,
+REQ-1007,Oriole Commerce,req-ora,SITE-103,roof-condition,SCHEDULED,pilot-01,true,false,
+REQ-1008,Cedarstone Assets,req-csa,SITE-203,facade-survey,IN_PROGRESS,pilot-02,true,false,
+REQ-1009,Oriole Commerce,req-ora,SITE-104,roof-condition,EVIDENCE_REVIEW,pilot-01,true,false,
+REQ-1010,Windwell Property,req-wwp,SITE-303,solar-panel,REWORK_REQUIRED,pilot-03,true,false,
+REQ-1011,Cedarstone Assets,req-csa,SITE-204,facade-survey,READY_FOR_DELIVERY,pilot-02,true,true,
+REQ-1012,Oriole Commerce,req-ora,SITE-105,roof-condition,DELIVERED,pilot-01,true,true,DEL-1012
+REQ-1013,Windwell Property,req-wwp,SITE-304,solar-panel,ON_HOLD,,false,false,
+REQ-1014,Cedarstone Assets,req-csa,SITE-205,facade-survey,CLOSED,pilot-02,true,true,DEL-1014
+REQ-1015,Oriole Commerce,req-ora,SITE-106,roof-condition,CANCELLED,,false,false,
