@@ -35,7 +35,8 @@ def check(rows: list[dict[str, str]]) -> list[str]:
             violations.append(f"{rid}: missing organization/site reference")
         if state in ASSIGNED and not row["assigned_pilot"]:
             violations.append(f"{rid}: missing pilot in {state}")
-        if state in ASSIGNED and row["planning_attestation"] != "true":
+        
+        if (state in ASSIGNED or state == "READY_TO_SCHEDULE") and row["planning_attestation"] != "true":
             violations.append(f"{rid}: missing planning attestation in {state}")
         if row["qa_approved"] == "true" and state not in QA_OK:
             violations.append(f"{rid}: QA approval in a non-approved state")
