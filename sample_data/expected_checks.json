@@ -1,5 +1,4 @@
-{
-  "records": 15,
+{"records": 15,
   "violations": 0,
   "distinct_clients": 3,
   "statuses": {
@@ -17,6 +16,4 @@
     "REWORK_REQUIRED": 1,
     "SCHEDULED": 1,
     "SUBMITTED": 1,
-    "TRIAGED": 1
-  }
-}
+    "TRIAGED": 1}}
