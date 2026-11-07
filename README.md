@@ -103,7 +103,7 @@ The goal is to demonstrate a **greenfield digital-product analysis workflow**: m
 
 # Results
 
-The case study delivers **4 business requirements, 18 functional requirements and 7 non-functional requirements** (29 total); a proposed MVP, role/permission matrix, workflow/state model, four diagrams, sample screen inventory, 10 draft acceptance scenarios and a risk/decision register.
+The case study delivers **4 business requirements, 18 functional requirements and 7 non-functional requirements** (29 total); a proposed MVP, role/permission matrix, workflow/state model, four diagrams, sample screen inventory, 11 draft acceptance scenarios and a risk/decision register.
 
 The optional fixture check reads **15 fictional request records**. It checks internal consistency of the *illustrative states* only; it is not product testing. Run from the repository root:
 
