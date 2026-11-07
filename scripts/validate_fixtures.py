@@ -11,12 +11,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "sample_data"
-KNOWN = {
-    "DRAFT", "SUBMITTED", "NEEDS_INFO", "TRIAGED", "FEASIBILITY_REVIEW",
+KNOWN = {"DRAFT", "SUBMITTED", "NEEDS_INFO", "TRIAGED", "FEASIBILITY_REVIEW",
     "READY_TO_SCHEDULE", "SCHEDULED", "ON_HOLD", "IN_PROGRESS",
     "EVIDENCE_REVIEW", "REWORK_REQUIRED", "READY_FOR_DELIVERY",
-    "DELIVERED", "CLOSED", "CANCELLED",
-}
+    "DELIVERED", "CLOSED", "CANCELLED",}
 ASSIGNED = {"SCHEDULED", "IN_PROGRESS", "EVIDENCE_REVIEW", "REWORK_REQUIRED", "READY_FOR_DELIVERY", "DELIVERED", "CLOSED"}
 QA_OK = {"READY_FOR_DELIVERY", "DELIVERED", "CLOSED"}
 DELIVERY = {"DELIVERED", "CLOSED"}
@@ -59,12 +57,10 @@ def main() -> None:
         rows = list(csv.DictReader(f))
     expected = json.loads((DATA / "expected_checks.json").read_text(encoding="utf-8"))
     issues = check(rows)
-    observed = {
-        "records": len(rows),
+    observed = {"records": len(rows),
         "violations": len(issues),
         "distinct_clients": len({r["client_org"] for r in rows}),
-        "statuses": dict(sorted(Counter(r["status"] for r in rows).items())),
-    }
+        "statuses": dict(sorted(Counter(r["status"] for r in rows).items())),}
     for issue in issues:
         print("FAIL:", issue)
     if observed != expected:
