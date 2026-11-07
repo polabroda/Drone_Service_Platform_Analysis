@@ -17,7 +17,7 @@ All stories and tests are **draft hypotheses**; no working UI, production system
 | US-09 | Operations user | View a history of actions and decisions | I can reconstruct who made a change | FR-015 |
 | US-10 | Coordinator | Cancel an eligible request with a reason | Abandoned pre-work cases remain traceable | FR-017 |
 
-## 2. Ten Proposed Acceptance Scenarios
+## 2. Eleven Proposed Acceptance Scenarios
 
 ### AT-01 – Save and submit a complete request (`US-01`)
 
@@ -59,9 +59,15 @@ All stories and tests are **draft hypotheses**; no working UI, production system
 
 **Given** a request is `IN_PROGRESS`; **when** a coordinator attempts `CANCELLED`; **then** the transition is denied and a policy exception is required outside this MVP. **Given** a pre-execution `SUBMITTED` case; **when** it is cancelled with a reason; **then** `CANCELLED` and the reason are recorded in the audit trail.
 
+### AT-11 – Confirm receipt and close delivered request (`US-08`)
+
+**Given** an authenticated requester belonging to the owning customer organization and a request in `DELIVERED` with a valid delivery reference; **when** the requester acknowledges receipt; **then** the request changes from `DELIVERED` to `CLOSED`, the acknowledgment is recorded with the actor and timestamp, and receipt does not imply acceptance of commercial quality claims.
+
+**Given** a request in any other status or an authenticated user outside the owning customer organization; **when** acknowledgment is attempted; **then** the action is denied and the request status remains unchanged.
+
 ## 3. What Is Not Proven
 
-No browser interactions were performed. No identity provider, storage security, privacy controls, permission engine, notification service, actual flight operation, image review, acceptance execution or SLA was tested. AT-01 through AT-10 are **test designs**, not test results.
+No browser interactions were performed. No identity provider, storage security, privacy controls, permission engine, notification service, actual flight operation, image review, acceptance execution or SLA was tested. AT-01 through AT-11 are **test designs**, not test results.
 
 ## 4. Additional Acceptance Coverage Needed Before Build
 
