@@ -46,7 +46,7 @@ These are **screen concepts**, not delivered mockups or a coded UI.
 | Safe planning boundary | BR-002, FR-005, FR-006 | Attestation and hold rules | AT-04, AT-05 |
 | Clear assignment | FR-007, FR-008 | Assignment screen, role matrix | AT-06 |
 | Evidence quality | BR-003, FR-009, FR-010 | Versioned package and independent QA | AT-07 |
-| Controlled customer release | BR-003, FR-011, FR-012 | Delivery and acknowledgment | AT-08 (release), follow-up needed (receipt) |
+| Controlled customer release | BR-003, FR-011, FR-012 | Delivery and acknowledgment | AT-08 (release), AT-11 (receipt) |
 | Cross-customer isolation | BR-004, FR-014, NFR-001 | Role matrix and authorization layer | AT-09 |
 | Traceable cancellation and edits | FR-015, FR-017, NFR-002 | Status transitions + audit | AT-10 |
 | Notifications | FR-016 | Event-to-recipient matrix | Test to design |
